@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HeaderComponent,
+
     FormsSerarchsComponent
   ],
   imports: [

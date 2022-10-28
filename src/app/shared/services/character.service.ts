@@ -13,10 +13,11 @@ export class CharacterService {
   searchCharacters(query='',pages=1){
     return this.http.get<Character[]>(
       `${environment.baseURLAPI}/name=${query}&page=${pages}`
-    )
+    );
 
   }
 getDetails(id:number){
+  return this.http.get<Character>(`${environment.baseURLAPI}/${id}`);
 
 }
 
