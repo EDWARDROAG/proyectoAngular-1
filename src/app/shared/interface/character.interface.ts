@@ -5,4 +5,5 @@ image: string;
 species: string;
 gender: string;
 status: string;
+created: string;
 }
