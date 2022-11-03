@@ -1,6 +1,6 @@
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Character } from '@app/shared/interface/character.interface';
 import { CharacterService } from '@app/shared/services/character.service';
 type RequestInfo = {Next: String};
@@ -27,14 +27,6 @@ export class CharacterListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getDataFromService();
-  }
-
-  private getCharactersByQuery():void{
-    // this.route.queryParams.pipe(
-    //   take(1) ).subscribe((params:ParamMap)=>{
-    //     this.query=params ['q'];
-    //     this,this.getDataFromService()
-    //   })
   }
 
 
